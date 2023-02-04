@@ -4,3 +4,9 @@ Professional Website With Intuitive Features & Easy-to-Use Customization Tools U
 ## ASP.NET - BOOSTRAP 5
 ### Pre-Requisites
 `.NET 6` 
+
+## Status:
+`Developing`
+
+### Images about the project
+![alt text](https://github.com/Nor-Mand/HospitalWebSite/blob/main/images/picture_1.png)
