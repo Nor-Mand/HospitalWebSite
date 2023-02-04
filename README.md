@@ -9,4 +9,4 @@ Professional Website With Intuitive Features & Easy-to-Use Customization Tools U
 `Developing`
 
 ### Images about the project
-![alt text](https://github.com/Nor-Mand/HospitalWebSite/blob/main/images/picture_1.png)
+![alt text](https://github.com/Nor-Mand/HospitalWebSite/blob/master/HospitalWebSite/wwwroot/images/picture_1.png)
