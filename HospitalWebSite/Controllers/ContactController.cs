@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using HospitalWebSite.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace HospitalWebSite.Controllers
 {
@@ -6,7 +7,12 @@ namespace HospitalWebSite.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var title = new SectionTitleModel()
+            {
+                Title = "Contact",
+                ImageURL = "/images/contact.jpg"
+            };
+            return View(title);
         }
     }
 }

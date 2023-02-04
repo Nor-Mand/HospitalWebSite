@@ -24,6 +24,10 @@ h5{
 
 header{
     background-color: var(--primary-color);
+    height:80px;
+    display:flex;
+    justify-content:center;
+    align-items:center
 }
 .nav-link, a{
     color: var(--white-color);
@@ -36,6 +40,29 @@ section{
     justify-content: center;
     align-items:center;
     padding-top: 150px;
+}
+
+.title-section{
+    margin-top:80px;
+    height: 180px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position:relative;
+}
+
+.image-section{
+    position:absolute;
+    z-index: -1;
+    height:100%;
+    width:100%;
+}
+
+.image-section img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
 }
 
 .btn-small {

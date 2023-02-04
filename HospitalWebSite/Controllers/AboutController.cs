@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using HospitalWebSite.Models;
+using Microsoft.AspNetCore.Mvc;
+using System.Security.Cryptography.X509Certificates;
 
 namespace HospitalWebSite.Controllers
 {
@@ -6,7 +8,12 @@ namespace HospitalWebSite.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var title = new SectionTitleModel()
+            {
+                Title = "About",
+                ImageURL = "/images/about.jpg"
+            };
+            return View(title);
         }
     }
 }
