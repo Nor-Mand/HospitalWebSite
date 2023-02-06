@@ -1,5 +1,8 @@
 ﻿using HospitalWebSite.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
+using System.Security.Cryptography.X509Certificates;
+using System.Xml.Linq;
 
 namespace HospitalWebSite.Controllers
 {
@@ -7,12 +10,63 @@ namespace HospitalWebSite.Controllers
     {
         public IActionResult Index()
         {
-            var title = new SectionTitleModel()
+           DoctorsIndexViewModel modelEnlace = new DoctorsIndexViewModel();
+            modelEnlace.Doctors = GetDoctors();
+            modelEnlace.Titles = GetTitleDoctors();
+            return View(modelEnlace);
+        }
+
+        private List<SectionTitleModel> GetTitleDoctors() {
+            return new List<SectionTitleModel>
             {
-                Title = "Doctors",
-                ImageURL = "/images/doctors.jpg"
+                new SectionTitleModel {
+                    Title = "Doctors",
+                    ImageURL = "/images/doctors.jpg"
+                } 
             };
-            return View(title);
+        }
+
+        private List<SectionDoctorModel> GetDoctors()
+        {
+            return new List<SectionDoctorModel>
+            {
+                new SectionDoctorModel()
+                {
+                    Name= "Doctor 1",
+                    Title = "Neurology",
+                    ImageURL = "/images/doctor.jpg"
+                },
+                new SectionDoctorModel()
+                {
+                    Name= "Doctor 2",
+                    Title = "Neurology",
+                    ImageURL = "/images/doctor.jpg"
+                },
+                new SectionDoctorModel() 
+                {
+                    Name= "Doctor 3",
+                    Title = "Neurology",
+                    ImageURL = "/images/doctor.jpg"
+                },
+                new SectionDoctorModel()
+                {
+                    Name= "Doctor 4",
+                    Title = "Neurology",
+                    ImageURL = "/images/doctor.jpg"
+                },
+                new SectionDoctorModel()
+                {
+                    Name= "Doctor 5",
+                    Title = "Neurology",
+                    ImageURL = "/images/doctor.jpg"
+                },
+                new SectionDoctorModel()
+                {
+                    Name= "Doctor 6",
+                    Title = "Neurology",
+                    ImageURL = "/images/doctor.jpg"
+                },
+            };
         }
     }
 }

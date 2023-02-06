@@ -1,7 +1,10 @@
-﻿@model SectionTitleModel
+﻿@model DoctorsIndexViewModel
 <div class="title-section">
+        @foreach (var title in Model.Titles)
+        {   
     <div class="image-section">
-        <img src="@Model.ImageURL" alt="@Model.Title"/>
+        <img src="@title.ImageURL" alt="@title.Title"/>
     </div>
-     <h1>@Model.Title</h1>
+     <h1>@title.Title</h1>
+        }
 </div>

@@ -22,6 +22,10 @@ h5{
     font-weight: 500;
 }
 
+a{
+    text-decoration:none;
+}
+
 header{
     background-color: var(--primary-color);
     height:80px;

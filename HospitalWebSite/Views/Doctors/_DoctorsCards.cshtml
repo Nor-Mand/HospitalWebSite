@@ -1,0 +1,15 @@
+﻿@model DoctorsIndexViewModel
+
+@foreach(var doctor in Model.Doctors)
+{
+<div class="col-4 mb-4">
+    <div class="card mx-auto" style="width: 18rem;">
+      <img src="@doctor.ImageURL" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title">@doctor.Name</h5>
+        <p class="card-text">@doctor.Title</p>
+        <a href="#" class="btn-small">view more</a>
+      </div>
+    </div>
+</div>
+}
