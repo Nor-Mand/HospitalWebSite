@@ -10,7 +10,7 @@ namespace HospitalWebSite.Controllers
     {
         public IActionResult Index()
         {
-           DoctorsIndexViewModel modelEnlace = new DoctorsIndexViewModel();
+           GlobalIndexViewModel modelEnlace = new GlobalIndexViewModel();
             modelEnlace.Doctors = GetDoctors();
             modelEnlace.Titles = GetTitleDoctors();
             return View(modelEnlace);

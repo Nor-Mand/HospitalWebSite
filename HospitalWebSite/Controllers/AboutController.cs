@@ -8,12 +8,20 @@ namespace HospitalWebSite.Controllers
     {
         public IActionResult Index()
         {
-            var title = new SectionTitleModel()
+            GlobalIndexViewModel modelEnlace = new GlobalIndexViewModel();
+            modelEnlace.Titles = GetTitlePage();
+            return View(modelEnlace);
+        }
+
+        private List<SectionTitleModel> GetTitlePage()
+        {
+            return new List<SectionTitleModel>
             {
-                Title = "About",
-                ImageURL = "/images/about.jpg"
+                new SectionTitleModel {
+                    Title = "About",
+                    ImageURL = "/images/about.jpg"
+                }
             };
-            return View(title);
         }
     }
 }

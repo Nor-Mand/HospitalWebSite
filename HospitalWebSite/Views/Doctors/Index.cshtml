@@ -1,4 +1,6 @@
-﻿@{
+﻿@model GlobalIndexViewModel
+
+@{
     ViewData["Title"] = "Doctors";
 }
 
@@ -6,6 +8,6 @@
 
 <div class="container">
     <div class="row justify-content-evenly">
-            <partial name="_DoctorsCards" />
+            <partial name="_DoctorsCards" model="Model.Doctors" />
     </div>
 </div>

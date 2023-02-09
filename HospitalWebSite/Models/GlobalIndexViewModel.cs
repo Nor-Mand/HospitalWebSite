@@ -1,6 +1,6 @@
 ﻿namespace HospitalWebSite.Models
 {
-    public class DoctorsIndexViewModel
+    public class GlobalIndexViewModel
     {
         public IEnumerable<SectionDoctorModel> Doctors { get; set; }
         public IEnumerable<SectionTitleModel> Titles { get; set; }
