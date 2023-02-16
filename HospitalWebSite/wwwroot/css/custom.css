@@ -81,6 +81,10 @@ section{
     border-radius: 25px 25px;
 }
 
+    .btn-small:hover {
+        filter: brightness(80%);
+    }
+
 .btn-middle {
     background-color: var(--accent-color);
     border: 1px solid var(--accent-color);
