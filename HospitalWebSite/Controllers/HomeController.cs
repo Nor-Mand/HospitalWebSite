@@ -16,10 +16,17 @@ namespace HospitalWebSite.Controllers
 
         public IActionResult Index()
         {
+            GlobalIndexViewModel modelLink = new GlobalIndexViewModel();
+            var respositoryDoctors = new RepositoryDoctors();
+            var doctors = respositoryDoctors.GetDoctors().Take(6);
+
             var respositoryServices = new RepositoryServices();
             var services = respositoryServices.GetServices();
-            var modelo = new GlobalIndexViewModel() { TypeServices = services };
-            return View(modelo);
+            
+            modelLink.TypeServices = services;
+            modelLink.Doctors = doctors;
+
+            return View(modelLink);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

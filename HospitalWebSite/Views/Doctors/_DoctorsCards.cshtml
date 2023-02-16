@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<SectionDoctorModel>
 
-@if (Model is not null)
-{
-    @foreach (var doctor in Model)
+<div class="owl-carousel owl-theme">
+    @if (Model is not null)
     {
-        <div class="col-4 mb-4">
+        @foreach (var doctor in Model)
+        {
             <div class="card mx-auto" style="width: 18rem;">
                 <img src="@doctor.ImageURL" class="card-img-top" alt="...">
                 <div class="card-body text-center">
@@ -13,6 +13,7 @@
                     <a href="#" class="btn-small">view more</a>
                 </div>
             </div>
-        </div>
+        }
     }
-}
+</div>
+

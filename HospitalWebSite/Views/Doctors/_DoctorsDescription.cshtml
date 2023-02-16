@@ -1,17 +1,20 @@
 ﻿
-<section id="doctors">
+<section id="doctors" class="mb-4">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-6 text-center">
+            <div class="col-6 text-center mb-4">
                 <h5>TRUSTED CARE</h5>
                 <h1>Our Doctors</h1>
             </div>
             <div class="container">
-                <div class="row justify-content-evenly">
-                    <p>Carrousel</p>
+                <div class="row justify-content-center">
                     <partial name="~/Views/Doctors/_DoctorsCards.cshtml" />
+                    <div class="col-2 mx-auto text-center mt-4">
+                        <a asp-controller="Doctors" asp-action="Index" class="btn-dark nav-link">View More</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 </section>
