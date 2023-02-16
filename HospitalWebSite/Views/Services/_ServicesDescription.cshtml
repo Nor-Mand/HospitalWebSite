@@ -1,12 +1,20 @@
-﻿<section id="services">
+﻿
+
+<section id="services">
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-6 text-center mb-4">
                 <h5>CARE YOU CAN  BELIEVE IN</h5>
                 <h1>Our Services</h1>
             </div>
-            <div class="col-10">
+            <div class="col-12">
                 <div class="row align-items-center">
+                    <div class="col-2">
+                        <partial name="~/Views/Services/_TypeServices.cshtml" />
+                        <div class="more-services">
+                            <a asp-controller="Services" asp-action="Index">View All</a>
+                        </div>
+                    </div>
                     <div class="col-6">
                         <h3>A passion for putting patiens first</h3>
                         <p>
@@ -14,7 +22,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque. Convallis felis vitae tortor augue. Velit nascetur proin massa in.
                         </p>
                     </div>
-                    <div class="col-6 image-service">
+                    <div class="col-4 image-service">
                         <img src="~/images/passion.jpg" alt="Our Services Picture" />
                     </div>
                 </div>

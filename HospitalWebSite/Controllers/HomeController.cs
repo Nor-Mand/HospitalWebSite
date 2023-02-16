@@ -1,4 +1,5 @@
 ﻿using HospitalWebSite.Models;
+using HospitalWebSite.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -15,7 +16,10 @@ namespace HospitalWebSite.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var respositoryServices = new RepositoryServices();
+            var services = respositoryServices.GetServices();
+            var modelo = new GlobalIndexViewModel() { TypeServices = services };
+            return View(modelo);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

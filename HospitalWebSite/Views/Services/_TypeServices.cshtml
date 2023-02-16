@@ -1,0 +1,10 @@
+﻿@model IEnumerable<ServicesModel>
+
+@foreach (var service in Model)
+{
+    <div class="box-services">
+        <h6>@service.Name</h6>
+        <img src="@service.Icon" />
+    </div>
+
+}

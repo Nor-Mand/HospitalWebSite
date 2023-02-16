@@ -1,5 +1,7 @@
 ﻿using HospitalWebSite.Models;
+using HospitalWebSite.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Drawing.Printing;
 
 namespace HospitalWebSite.Controllers
 {
@@ -9,6 +11,9 @@ namespace HospitalWebSite.Controllers
         {
             GlobalIndexViewModel modelEnlace = new GlobalIndexViewModel();
             modelEnlace.Titles = GetTitlePage();
+            var respositoryServices = new RepositoryServices();
+            var services = respositoryServices.GetServices();
+            modelEnlace.TypeServices = services;
             return View(modelEnlace);
         }
 
@@ -22,5 +27,6 @@ namespace HospitalWebSite.Controllers
                 }
             };
         }
+
     }
 }

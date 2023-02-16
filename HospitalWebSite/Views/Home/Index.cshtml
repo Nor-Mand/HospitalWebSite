@@ -1,4 +1,6 @@
-﻿@{
+﻿@model GlobalIndexViewModel
+
+@{
     ViewData["Title"] = "Home";
 }
 
@@ -16,6 +18,6 @@
 </div>
 
 <partial name="_BookAppointment" />
-<partial name="_HomeDescription" />
-<partial name="~/Views/Services/_ServicesDescription.cshtml" />
-<partial name="~/Views/Doctors/_DoctorsDescription.cshtml" />
+<partial name="~/Views/About/_AboutDescription.cshtml" />
+<partial name="~/Views/Services/_ServicesDescription.cshtml" model="Model.TypeServices"/>
+@*<partial name="~/Views/Doctors/_DoctorsDescription.cshtml" />*@

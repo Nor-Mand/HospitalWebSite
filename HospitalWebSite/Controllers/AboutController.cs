@@ -18,7 +18,7 @@ namespace HospitalWebSite.Controllers
             return new List<SectionTitleModel>
             {
                 new SectionTitleModel {
-                    Title = "About",
+                    Title = "About us",
                     ImageURL = "/images/about.jpg"
                 }
             };
