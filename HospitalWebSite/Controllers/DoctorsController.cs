@@ -1,4 +1,5 @@
 ﻿using HospitalWebSite.Models;
+using HospitalWebSite.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Security.Cryptography.X509Certificates;
@@ -10,18 +11,23 @@ namespace HospitalWebSite.Controllers
     {
         public IActionResult Index()
         {
-           GlobalIndexViewModel modelLink = new GlobalIndexViewModel();
+            GlobalIndexViewModel modelLink = new GlobalIndexViewModel();
             modelLink.Titles = GetTitleDoctors();
+
+            var repositoryDoctors = new RepositoryDoctors();
+            var doctors = repositoryDoctors.GetDoctors();
+            modelLink.Doctors = doctors;
             return View(modelLink);
         }
 
-        private List<SectionTitleModel> GetTitleDoctors() {
+        private List<SectionTitleModel> GetTitleDoctors()
+        {
             return new List<SectionTitleModel>
             {
                 new SectionTitleModel {
                     Title = "Doctors",
                     ImageURL = "/images/doctors.jpg"
-                } 
+                }
             };
         }
     }

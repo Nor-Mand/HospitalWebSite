@@ -30,6 +30,10 @@ p{
     margin:0;
 }
 
+.pages-section {
+    margin: 100px 0 100px 0;
+}
+
 header{
     background-color: var(--primary-color);
     height:80px;
@@ -237,6 +241,15 @@ section{
     transform: translateX(0);
 }
 
+.card-body{
+    background-color: var(--accent-color);
+}
+
+.card-footer{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
 /* Contact */
 .box-contact{
     background-color: var(--secondary-color);
@@ -284,6 +297,3 @@ footer{
     width:300px;
 }
 
-.about-section{
-    margin: 100px 0 100px 0;
-}
