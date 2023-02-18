@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/HospitalWebSite.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/custom.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/custom.css" asp-append-version="true" />
 
     <link rel="stylesheet" href="~/css/owl.carousel.min.css">
     <link rel="stylesheet" href="~/css/owl.theme.default.min.css">
 </head>
 <body>
     <header class="fixed-top">
-       <div class="container">
+        <div class="container">
             <nav class="navbar navbar-expand-sm navbar-toggleable-sm  box-shadow">
                 <div class="container-fluid">
                     <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HOSPITAL</a>
@@ -49,13 +49,13 @@
                     </div>
                 </div>
             </nav>
-       </div>
+        </div>
     </header>
-    <div>
-        <main role="main" class="pb-3">
+
+    <main role="main" class="container-fluid p-0">
             @RenderBody()
-        </main>
-    </div>
+    </main>
+
     <partial name="_Footer" />
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,10 +1,67 @@
-﻿@{
+﻿@model GlobalIndexViewModel
+
+@{
     ViewData["Title"] = "About us";
 }
 
+
 <partial name="_SectionTitle" />
-<section>
-    <div>
-        <h5>Content</h5>
+
+<div class="about-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-10 mx-auto">
+                <div class="row">
+                    <div class="col-4">
+                        <img class="about-image" src="/images/about/about_page.jpg" />
+                    </div>
+                    <div class="col-8">
+                        <h5>WELCOME TO HOSPITAL</h5>
+                        <h1>Best Care for Your</h1>
+                        <h1>Good Health</h1>
+                        <h5>Our values</h5>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul>
+                                    <li>Accusam facilisi et diam.</li>
+                                    <li>Magna amet.</li>
+                                    <li>Dolores facilisi volutpat blandit.</li>
+                                    <li>Consequat consetetur et accusam enim et.</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul>
+                                    <li>Quis.</li>
+                                    <li>Magna facer justo.</li>
+                                    <li>Sit voluptua lorem consetetur stet magna gubergren.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p>
+                            Et dolore diam dolore ut kasd facilisi erat praesent erat dolor labore et rebum vel vero et tempor dolores sed dolore nulla erat consetetur est et at aliquam consetetur elitr tempor kasd dolor accumsan amet kasd vulputate suscipit congue dolore consetetur veniam stet dolor facilisi ipsum ipsum nonumy lorem dolor dolore diam sit eos diam at magna et sadipscing amet
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
+</div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6 text-center mb-4">
+            <h5>TRUSTED CARE</h5>
+            <h1>Our Doctors</h1>
+        </div>
+    </div>
+    <partial name="~/Views/Doctors/_DoctorsCards.cshtml" model="Model.Doctors" />
+</div>
+<div class="about-section">
+    <div class="container-fluid p-0 mt-4">
+        <partial name="_Testimonial" />
+    </div>
+</div>
+<div class="about-section">
+    <div class="container">
+    <partial name="~/Views/Contact/_ContactDescription.cshtml" />
+</div>
+</div>

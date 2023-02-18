@@ -45,6 +45,42 @@ namespace HospitalWebSite.Services
                     Title = "Lorem Ipsum",
                     ImageURL = "/images/doctors/doctor3.jpg"
                 },
+                new SectionDoctorModel()
+                {
+                    Name= "Doctor 7",
+                    Title = "Lorem Ipsum",
+                    ImageURL = "/images/doctors/doctor1.jpg"
+                },
+                new SectionDoctorModel()
+                {
+                    Name= "Doctor 8",
+                    Title = "Lorem Ipsum",
+                    ImageURL = "/images/doctors/doctor2.jpg"
+                },
+                new SectionDoctorModel()
+                {
+                    Name= "Doctor 9",
+                    Title = "Lorem Ipsum",
+                    ImageURL = "/images/doctors/doctor3.jpg"
+                },
+                new SectionDoctorModel()
+                {
+                    Name= "Doctor 10",
+                    Title = "Lorem Ipsum",
+                    ImageURL = "/images/doctors/doctor1.jpg"
+                },
+                new SectionDoctorModel()
+                {
+                    Name= "Doctor 11",
+                    Title = "Lorem Ipsum",
+                    ImageURL = "/images/doctors/doctor2.jpg"
+                },
+                new SectionDoctorModel()
+                {
+                    Name= "Doctor 12",
+                    Title = "Lorem Ipsum",
+                    ImageURL = "/images/doctors/doctor3.jpg"
+                },
             };
         }
     }

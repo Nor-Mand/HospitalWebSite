@@ -188,6 +188,10 @@ section{
     object-fit: cover
 }
 
+.bg-book {
+    background-color: var(--secondary-color) !important;
+}
+
 /* SERVICES */
 .box-services {
     border: 1px solid var(--secondary-color);
@@ -253,4 +257,33 @@ footer{
     background-color: var(--primary-color);
     color: var(--white-color);
     padding: 100px 0 100px 0;
+}
+
+/* Testimonial */
+.carousel-inner {
+    height: 300px;
+}
+
+    .carousel-inner::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(31, 43, 108, 0.7);
+    }
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-caption{
+    z-index:1;
+}
+
+/* About */
+.about-image{
+    width:300px;
+}
+
+.about-section{
+    margin: 100px 0 100px 0;
 }

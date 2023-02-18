@@ -1,4 +1,5 @@
 ﻿using HospitalWebSite.Models;
+using HospitalWebSite.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Cryptography.X509Certificates;
 
@@ -8,9 +9,14 @@ namespace HospitalWebSite.Controllers
     {
         public IActionResult Index()
         {
-            GlobalIndexViewModel modelEnlace = new GlobalIndexViewModel();
-            modelEnlace.Titles = GetTitlePage();
-            return View(modelEnlace);
+            GlobalIndexViewModel modelLink = new GlobalIndexViewModel();
+            modelLink.Titles = GetTitlePage();
+
+            var repositoryDoctors = new RepositoryDoctors();
+            var doctors = repositoryDoctors.GetDoctors();
+            modelLink.Doctors= doctors;
+
+            return View(modelLink);
         }
 
         private List<SectionTitleModel> GetTitlePage()

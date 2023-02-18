@@ -22,5 +22,11 @@ namespace HospitalWebSite.Controllers
                 }
             };
         }
+
+        [HttpPost]
+        public IActionResult Index(ContactViewModel ContactViewModel) 
+        {
+            return Redirect("Home/Index");
+        }
     }
 }
