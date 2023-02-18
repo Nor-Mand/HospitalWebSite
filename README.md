@@ -18,3 +18,9 @@ Professional Website With Intuitive Features & Easy-to-Use Customization Tools U
 ![alt text](https://github.com/Nor-Mand/HospitalWebSite/blob/master/HospitalWebSite/wwwroot/images/project/picture_4.png)
 
 ![alt text](https://github.com/Nor-Mand/HospitalWebSite/blob/master/HospitalWebSite/wwwroot/images/project/picture_5.png)
+
+![alt text](https://github.com/Nor-Mand/HospitalWebSite/blob/master/HospitalWebSite/wwwroot/images/project/picture_6.png)
+
+![alt text](https://github.com/Nor-Mand/HospitalWebSite/blob/master/HospitalWebSite/wwwroot/images/project/picture_7.png)
+
+![alt text](https://github.com/Nor-Mand/HospitalWebSite/blob/master/HospitalWebSite/wwwroot/images/project/picture_8.png)
