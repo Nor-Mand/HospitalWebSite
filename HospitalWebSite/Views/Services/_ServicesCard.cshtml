@@ -1,0 +1,16 @@
+﻿@model GlobalIndexViewModel
+
+@if (Model is not null)
+{
+    @foreach (var service in Model.TypeServices)
+    {
+        <div class="col-4">
+            <div class="services-card">
+                <img class="image" src="@service.Image" alt="Service" />
+                <img class="icon" src="@service.Icon" alt="icon" />
+                <h3 class="name mt-4">@service.Name</h3>
+                <p class="service">@service.Description</p>
+            </div>
+        </div>
+    }
+}

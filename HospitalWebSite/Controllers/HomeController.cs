@@ -21,7 +21,7 @@ namespace HospitalWebSite.Controllers
             var doctors = respositoryDoctors.GetDoctors().Take(6);
 
             var respositoryServices = new RepositoryServices();
-            var services = respositoryServices.GetServices();
+            var services = respositoryServices.GetServices().Take(3);
             
             modelLink.TypeServices = services;
             modelLink.Doctors = doctors;
